@@ -7,10 +7,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.GenericLifecycleObserver;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import java.time.Instant;
 import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.viewholder> {

@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     for (int i = 0; i < 100; i++) {
                         JSONObject object= jsonArray.getJSONObject(i);
                         list.add(object.getString("url"));
+                        Log.d("TTT", "url====: "+list.get(i));
 
                     }
                 } catch (JSONException e) {
